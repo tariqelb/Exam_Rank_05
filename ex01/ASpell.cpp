@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 21:55:22 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 13:58:12 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 15:06:18 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ASpell::ASpell(const std::string& name, const std::string& effects)
 {
-	std::cout << "ASpell constructor called" << std::endl;
+	//std::cout << "ASpell constructor called" << std::endl;
 	this->name = name;
 	this->effects = effects;
 }
@@ -31,7 +31,7 @@ std::string	ASpell::getEffects(void) const
 
 ASpell::~ASpell()
 {
-	std::cout << "Destructor called" << std::endl;
+	//std::cout << "Aspell destructor called" << std::endl;
 }
 
 void	ASpell::launch(const ATarget& target) const

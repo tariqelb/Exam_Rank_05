@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 19:44:53 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 13:43:16 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 14:59:29 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <iostream>
 # include "ATarget.hpp"
 
+class ATarget;
 class ASpell
 {
 	protected:

@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 22:09:07 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 13:58:18 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 15:06:30 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ATarget::ATarget(const std::string& type)
 {
-	std::cout << "ATarget constructor called" << std::endl;
+	//std::cout << "ATarget constructor called" << std::endl;
 	this->type = type;
 }
 
@@ -25,7 +25,7 @@ const std::string&	ATarget::getType(void) const
 
 ATarget::~ATarget()
 {
-	std::cout << "ATarget destructor called"<< std::endl;
+	//std::cout << "ATarget destructor called"<< std::endl;
 }
 
 void	ATarget::getHitBySpell(const ASpell& spell) const

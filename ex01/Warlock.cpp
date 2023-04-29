@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:39:48 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 13:38:24 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 17:27:36 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,17 +44,54 @@ void	Warlock::introduce(void) const
 	std::cout << this->name << ": I am " << this->name << ", " << this->title << "!" << std::endl;
 }
 
-void	Warlock::learnSpell(ASpell* speel)
+void	Warlock::learnSpell(ASpell* spell)
 {
-	std::cout << "LearnSpell called" << std::endl;
+	int i;
+	int size;
+	int flag;
+
+	flag = 1;
+	size = this->spells.size();
+	i = 0;
+	while (i < size)
+	{
+		if (this->spells[i]->getName() == spell->getName())
+			flag = 0;
+		i++;
+	}
+	if (flag)
+		this->spells.push_back(spell->clone());
 }
 
 void	Warlock::forgetSpell(std::string name)
 {
-	std::cout << "ForgetSpell called with name :" << name << std::endl;
+	std::vector<ASpell *>::iterator		it;
+
+	it = this->spells.begin();
+	while (it != this->spells.end())
+	{
+		if ((*it)->getName() == name)
+		{
+			delete (*it);
+			this->spells.erase(it);
+			break;
+		}
+		it++;
+	}
 }
 
 void	Warlock::launchSpell(std::string name, ATarget& target)
 {
-	std::cout << "launchSpell called with name :" << name << " and target : " << target.getType() << std::endl;
+	std::vector<ASpell *>::iterator	it;
+
+	it = this->spells.begin();
+	while (it != this->spells.end())
+	{
+		if ((*it)->getName() == name)
+		{
+			(*it)->launch(target);
+			break;
+		}
+		it++;
+	}
 }

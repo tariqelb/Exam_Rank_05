@@ -6,13 +6,13 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 22:56:03 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 15:06:56 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 17:49:38 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fwoosh.hpp"
 
-Fwoosh::Fwoosh() : ASpell("Fwoosh", "Fwooshed")
+Fwoosh::Fwoosh() : ASpell("Fwoosh", "fwooshed")
 {
 //	std::cout << "Fwoosh constructor called" << std::endl;
 }

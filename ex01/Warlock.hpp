@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:30:28 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 17:02:10 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 17:42:53 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ class Warlock
 
 		void				learnSpell(ASpell* speel);
 		void				forgetSpell(std::string name);
-		void				launchSpell(std::string name, ATarget& target);
+		void				launchSpell(std::string name, const ATarget& target);
 };
 
 #endif

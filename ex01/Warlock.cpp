@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 17:39:48 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 17:27:36 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/29 17:43:58 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ void	Warlock::forgetSpell(std::string name)
 	}
 }
 
-void	Warlock::launchSpell(std::string name, ATarget& target)
+void	Warlock::launchSpell(std::string name,const ATarget& target)
 {
 	std::vector<ASpell *>::iterator	it;
 

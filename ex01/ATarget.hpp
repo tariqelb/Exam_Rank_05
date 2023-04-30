@@ -6,7 +6,7 @@
 /*   By: tel-bouh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 22:01:02 by tel-bouh          #+#    #+#             */
-/*   Updated: 2023/04/29 14:59:25 by tel-bouh         ###   ########.fr       */
+/*   Updated: 2023/04/30 20:08:49 by tel-bouh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class ASpell;
 class ATarget
 {
-	private:
+	protected:
 		std::string	type;
 
 	public:

@@ -19,6 +19,17 @@ TargetGenerator::TargetGenerator()
 
 TargetGenerator::~TargetGenerator()
 {
+	int i;
+	int size;
+	
+	i = 0;
+	size = this->target.size();
+	while (i < size)
+	{
+		delete this->target[i];
+		i++;
+	}
+	this->target.clear();
 }
 
 void		TargetGenerator::learnTargetType(ATarget* target)
